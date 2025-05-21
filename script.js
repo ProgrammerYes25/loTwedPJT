@@ -32,8 +32,18 @@ database = firebase.database();
 // Firebase 데이터베이스 정보 가져오기
 var ref = database.ref("led");
 ref.on("value", gotData);
+var tempref = database.ref("temperature");
+tempref.on("value", getTemp);  
+
+
+function getTemp (data){
+  var val = data.val();
+  document.getElementById("tempval").textContent = val.temp;
+  console.log(val)
+}
 
 function gotData(data) {
+
   var val = data.val();
   if (val.led == 0) {
     //document.getElementById("ledstatus").innerHTML = "led가 현재 꺼짐";
