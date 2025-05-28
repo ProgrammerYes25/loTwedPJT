@@ -73,7 +73,7 @@ button:hover::before {
   max-width: 600px;
   border: 2px solid rgba(255, 255, 255, 0.5);
 }
-#tempval{
+.val{
   color: #ffffff;
   text-shadow: 2px 2px 4px rgba(157, 129, 137, 0.3);
   font-size: 1.5em;
