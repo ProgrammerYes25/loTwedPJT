@@ -61,7 +61,9 @@ button:hover {
 button:hover::before {
   border-color: #a2d2ff;
 }
-
+.login:h2{
+  color: #000;
+}
 .container {
   padding: 20px;
   border-radius: 20px;
@@ -70,4 +72,9 @@ button:hover::before {
   margin: 20px auto;
   max-width: 600px;
   border: 2px solid rgba(255, 255, 255, 0.5);
+}
+#tempval{
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(157, 129, 137, 0.3);
+  font-size: 1.5em;
 }

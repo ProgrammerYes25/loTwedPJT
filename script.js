@@ -38,7 +38,7 @@ tempref.on("value", getTemp);
 
 function getTemp (data){
   var val = data.val();
-  document.getElementById("tempval").textContent = val.temp;
+  document.getElementById("tempval").textContent = "🌡️ 온도 : "+val.temp;
   console.log(val)
 }
 
