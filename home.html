@@ -6,31 +6,28 @@
   <meta name="viewport" content="width=device-width">
   <title>IoT test</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
-  <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase.js"></script>
+  <!-- <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase.js"></script> -->
 </head>
 
 <body>
   <center>
-    <h1>반소과 화이팅!</h1>
-    <h2>IoT Programming</h2>
-    <img id="img" src="ledoff.png">
-    <div class="container-center">
-      <button type=" button" onclick="ledOn()">LED On</button>
-      <button type="button" onclick="ledOff()">LED Off</button>
-    </div>
-    <p id="tempval" class="val"></p>
-    <p id="humval" class="val"></p>
-    <p id="pumval" class="val"></p>
-    <p id="gyro-pitch-val" class="val"></p>
-    <p id="gyro-roll-val" class="val"></p>
-    <p id="gyro-yaw-val" class="val"></p>
-    <p id="accel-x-val" class="val"></p>
-    <p id="accel-y-val" class="val"></p>
-    <p id="accel-z-val" class="val"></p>
-    <p id="timeval" class="val"></p>
-
+    <h1></h1>
+    <h2>센서정보</h2>
+    <div id="historicalSensorDataContainer">
+      <table id="historicalSensorDataTable">
+        <thead>
+        <tr>
+          <th>시간</th>
+          <th>온도 (°C)</th>
+          <th>습도 (%)</th>
+          <th>기압 (hPa)</th>
+          <th>자이로 (P/R/Y)</th>
+          <th>가속도 (X/Y/Z)</th>
+        </tr>
+        </thead>
+      </table>
   </center>
-  <script src="script.js">
+  <script type="module" src="script.js">
   </script>
 </body>
 
