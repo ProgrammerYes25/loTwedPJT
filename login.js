@@ -32,6 +32,6 @@ lgoinForm.addEventListener('submit', async (e) =>{
         password:userPassword
     });
 
-    window.location.href = 'home.html'; 
+    window.location.href = 'login.html'; 
 })
 

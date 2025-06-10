@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>IoT test</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <!-- <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase.js"></script> -->
+</head>
+
+<body>
+  <center>
+    <h1></h1>
+    <h2>센서정보</h2>
+    <div id="historicalSensorDataContainer">
+      <table id="historicalSensorDataTable">
+        <thead>
+        <tr>
+          <th>시간</th>
+          <th>온도 (°C)</th>
+          <th>습도 (%)</th>
+          <th>기압 (hPa)</th>
+          <th>자이로 (P/R/Y)</th>
+          <th>가속도 (X/Y/Z)</th>
+        </tr>
+        </thead>
+      </table>
+  </center>
+  <script type="module" src="script.js">
+  </script>
+</body>
+
+</html><!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>IoT test</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase.js"></script>
+</head>
+
+<body>
+  <center>
+    <h1>welcome to IoT Project</h1>
+    <div class="login">
+      <h2>로그인</h2>
+      <form id="lgoinForm" action="/home.html">
+        <p>
+          <label for="email">이메일</label>
+          <input id="email" name="email" type="email" placeholder="아이디를 입력하세요" required>
+        </p>
+        <p>
+          <label for="password">비밀번호</label> <input id="password" name="password" type="password" placeholder="비밀 번호를 입력하세요" required>
+        </p>
+        <input type="submit" value="로그인하기">
+      </form>
+    </div>
+  </center>
+  <script src="login.js">
+  </script>
+</body>
+
+</html>

@@ -6,27 +6,36 @@
   <meta name="viewport" content="width=device-width">
   <title>IoT test</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
-  <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase.js"></script>
+
+  <!-- <script type="importmap">
+    {
+      "imports": {
+        "firebase/app": "../node_modules/firebase/app/dist/index.esm.js",
+        "firebase/database": "../node_modules/firebase/database/dist/index.esm.js"
+      }
+    }
+  </script> -->
+  <!-- <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-database-compat.js"></script> -->
 </head>
 
 <body>
-  <center>
-    <h1>welcome to IoT Project</h1>
-    <div class="login">
-      <h2>로그인</h2>
-      <form id="lgoinForm" action="/home.html">
-        <p>
-          <label for="email">이메일</label>
-          <input id="email" name="email" type="email" placeholder="아이디를 입력하세요" required>
-        </p>
-        <p>
-          <label for="password">비밀번호</label> <input id="password" name="password" type="password" placeholder="비밀 번호를 입력하세요" required>
-        </p>
-        <input type="submit" value="로그인하기">
-      </form>
-    </div>
-  </center>
-  <script src="login.js">
+  <!-- <center> -->
+    <div class="main-container"> 
+    <h2>사용자 센서정보</h2>
+      <table>
+        <thead>
+        <tr>
+          <th>이름</th><th>온도 (°C)</th><th>습도 (%)</th><th>기압 (hPa)</th><th>자이로 (P/R/Y)</th><th>가속도 (X/Y/Z)</th><th>시간</th>
+        </tr>
+        </thead>
+        <tbody id="tableBody">
+        </tbody>
+      </table>
+      <button id="uploadDataButton">새 테스트 데이터 업로드</button>
+      </div>
+  <!-- </center> -->
+  <script type="module" src="script.js">
   </script>
 </body>
 
