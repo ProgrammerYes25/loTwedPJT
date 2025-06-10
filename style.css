@@ -210,3 +210,89 @@ tbody td[colspan="6"] {
   padding: 20px;
 }
 
+/* 반응형 디자인을 위한 미디어 쿼리 */
+@media (max-width: 768px) {
+  center {
+      padding: 20px;
+      margin: 10px;
+  }
+  h1 {
+      font-size: 2.2em;
+  }
+  h2 {
+      font-size: 1.4em;
+  }
+  table, thead, tbody, th, td, tr {
+      display: block; /* 모바일에서 테이블을 블록 요소처럼 보이게 */
+  }
+  thead {
+      display: none; /* 모바일에서는 헤더 숨김 (각 행에 라벨을 붙이는 것이 일반적) */
+  }
+  tbody tr {
+      margin-bottom: 15px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  tbody td {
+      border-bottom: 1px solid #eee;
+      text-align: right; /* 내용을 오른쪽 정렬 */
+      padding-left: 50%; /* 라벨 공간 확보 */
+      position: relative;
+  }
+  tbody td:before {
+      content: attr(data-label); /* data-label 속성으로 라벨 표시 */
+      position: absolute;
+      left: 10px;
+      width: 45%;
+      padding-right: 10px;
+      white-space: nowrap;
+      text-align: left;
+      font-weight: bold;
+      color: #555;
+  }
+  /* 각 셀에 data-label 추가 예시 (JavaScript에서 동적으로 추가하거나 HTML에 직접 추가) */
+  /* <td>${record.timestamp_readable}</td>  -> <td data-label="시간">${record.timestamp_readable}</td> */
+}
+
+@media (max-width: 768px) {
+  .main-container {
+      padding: 20px;
+      margin: 10px;
+  }
+  h1 {
+      font-size: 2.2em;
+  }
+  h2 {
+      font-size: 1.4em;
+  }
+  table, thead, tbody, th, td, tr {
+      display: block; /* 모바일에서 테이블을 블록 요소처럼 보이게 */
+  }
+  thead {
+      display: none; /* 모바일에서는 헤더 숨김 (각 행에 라벨을 붙이는 것이 일반적) */
+  }
+  tbody tr {
+      margin-bottom: 15px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  tbody td {
+      border-bottom: 1px solid #eee;
+      text-align: right; /* 내용을 오른쪽 정렬 */
+      padding-left: 50%; /* 라벨 공간 확보 */
+      position: relative;
+  }
+  tbody td:before {
+      content: attr(data-label); /* data-label 속성으로 라벨 표시 */
+      position: absolute;
+      left: 10px;
+      width: 45%;
+      padding-right: 10px;
+      white-space: nowrap;
+      text-align: left;
+      font-weight: bold;
+      color: #555;
+  }
+}
