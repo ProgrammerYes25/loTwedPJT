@@ -281,7 +281,7 @@ tbody td[colspan="6"] {
   tbody td {
       border-bottom: 1px solid #eee;
       text-align: right; /* 내용을 오른쪽 정렬 */
-      padding-left: 50%; /* 라벨 공간 확보 */
+      padding-left:80%; /* 라벨 공간 확보 */
       position: relative;
   }
   tbody td:before {

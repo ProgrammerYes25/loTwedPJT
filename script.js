@@ -90,11 +90,11 @@ async function getData (dataList){
       const tr = document.createElement('tr');
       tr.innerHTML = `
       <td data-label="이름">${record.name}</td>
-      <td data-label="온도">${typeof record.temperature === 'number' ? record.temperature.toFixed(2) + '°C' : record.temperature}</td>
-      <td data-label="습도">${typeof record.humidity === 'number' ? record.humidity.toFixed(2) + '%' : record.humidity}</td>
-      <td data-label="기압">${typeof record.pressure === 'number' ? record.pressure.toFixed(2) + 'hPa' : record.pressure}</td>
-      <td data-label="자이로">${record.gyro_x !== 'N/A' ? `X:${record.gyro_x.toFixed(2)}, Y:${record.gyro_y.toFixed(2)}, Z:${record.gyro_z.toFixed(2)}` : 'N/A'}</td>
-      <td data-label="가속도">${record.accel_x !== 'N/A' ? `X:${record.accel_x.toFixed(3)}, Y:${record.accel_y.toFixed(3)}, Z:${record.accel_z.toFixed(3)}` : 'N/A'}</td>
+      <td data-label="온도">${typeof record.temperature === 'number' ? record.temperature.toFixed(2) + ' °C' : record.temperature}</td>
+      <td data-label="습도">${typeof record.humidity === 'number' ? record.humidity.toFixed(2) + ' %' : record.humidity}</td>
+      <td data-label="기압">${typeof record.pressure === 'number' ? record.pressure.toFixed(2) + ' hPa' : record.pressure}</td>
+      <td data-label="자이로">${record.gyro_x !== 'N/A' ? `X: ${record.gyro_x.toFixed(2)}, Y: ${record.gyro_y.toFixed(2)}, Z: ${record.gyro_z.toFixed(2)}` : 'N/A'}</td>
+      <td data-label="가속도">${record.accel_x !== 'N/A' ? `X: ${record.accel_x.toFixed(3)}, Y: ${record.accel_y.toFixed(3)}, Z: ${record.accel_z.toFixed(3)}` : 'N/A'}</td>
       <td data-label="시간">${record.timestamp}</td>`;
       tableBody.appendChild(tr);
     });
